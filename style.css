@@ -114,6 +114,15 @@ hr {
     margin: 0 auto;
 }
 
+.center-text {
+    text-align: center;
+}
+
+.secondary-text {
+    color: var(--secondary);
+
+}
+
 /* NAVBAR */
 .header {
     background-color: var(--primary);

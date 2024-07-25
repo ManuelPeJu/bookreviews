@@ -114,6 +114,13 @@ hr {
     margin: 0 auto;
 }
 
+.featured-image {
+    margin-bottom: 3rem;
+}
+
+/* utilities */
+
+
 .center-text {
     text-align: center;
 }
@@ -121,6 +128,10 @@ hr {
 .secondary-text {
     color: var(--secondary);
 
+}
+
+.section {
+    padding: 5rem 0 ;
 }
 
 /* NAVBAR */

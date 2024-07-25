@@ -24,7 +24,7 @@ add_action('init', 'bookreviews_menus');
 function bookreviews_scripts_style() {
     //CSS
     wp_enqueue_style('normalize', 'https://necolas.github.io/normalize.css/8.0.1/normalize.css', '8.0.1');
-    wp_enqueue_style('style', get_stylesheet_uri(), array('normalize', '1.0.0'));
+    wp_enqueue_style("style", get_stylesheet_uri(), array("normalize"), "1.0.0");
 
 
     //JS
@@ -32,5 +32,3 @@ function bookreviews_scripts_style() {
 }
 add_action('wp_enqueue_scripts', 'bookreviews_scripts_style');
 
-
-?>

@@ -8,14 +8,14 @@
     ?>
 </head>
 <body <?php body_class(); ?>>
-    <header>
-        <nav class="container">
+    <header class="header">
+        <nav class="container nav">
             <div class="logo">
                 <a href="<?php echo site_url(); ?>" class="no-logo">
                     Logotipo
                 </a>
             </div>
-            <div class="contaier-menu">
+            <div class="container-menu">
                 <?php 
                     $args = array (
                         "theme_location" => "menu-principal", // locate the menu u want to render

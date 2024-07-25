@@ -16,13 +16,18 @@
     --main-font: 'Raleway', sans-serif;
     --heads-font: "Staatliches", sans-serif;
     /** Colores **/
-    --primary: #ff5b00;
+    /* --primary: #ff5b00;
     --dark-grey: #2f2e2e;
     --light-grey: #EBEBEB;
     --white:#FFF;
-    --dark: #000;
+    --dark: #000; */
 
-
+    --primary: #2C3E50;
+    --primary-2: #ECF0F1;
+    --secondary: #C0392B;
+    --secondary-2: #F39C12;
+    --accent: #27AE60;
+    --accent-2: #95A5A6;
 }
 
 html {
@@ -40,7 +45,7 @@ body {
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 2;
-    background-color: whitesmoke;
+    background-color: var(--primary-2);
 }
 
 /* Headings */
@@ -107,4 +112,47 @@ hr {
 .focus-content {
     width: min(95%, 80rem);
     margin: 0 auto;
+}
+
+/* NAVBAR */
+.header {
+    background-color: var(--primary);
+    padding: 2rem 0;
+}
+
+body.home .header {
+    padding-top: 2rem;
+    height: auto;
+    min-height: 10rem;
+    width: 100%;
+}
+
+.no-logo {
+    color: var(--white);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav a {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: var(--secondary-2);
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

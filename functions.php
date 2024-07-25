@@ -1,5 +1,25 @@
 <?php
 
+// image support
+function bookreviews_setup()
+{
+    // featured images
+    add_theme_support("post-thumbnails");
+
+    //seo for titles
+    add_theme_support("title-tag");
+}
+add_action("after_setup_theme", "bookreviews_setup");
+
+// adding a main menu
+function bookreviews_menus() {
+    register_nav_menus(array(
+        'menu-principal' => __('Menu Principal', 'bookreviews'),
+    ));
+}
+add_action('init', 'bookreviews_menus');
+
+
 // Adding the style and Js files
 function bookreviews_scripts_style() {
     //CSS
@@ -12,3 +32,5 @@ function bookreviews_scripts_style() {
 }
 add_action('wp_enqueue_scripts', 'bookreviews_scripts_style');
 
+
+?>

@@ -167,6 +167,10 @@ body.home .header {
     font-weight: bold;
 }
 
+.nav a:hover {
+    color: var(--secondary-2);
+}
+
 @media (min-width: 768px) {
     .nav {
         flex-direction: row;
@@ -198,39 +202,11 @@ body.home .header {
         z-index: 1;
     }
 
+    .main-menu a:hover {
+        color: var(--secondary-2);
+    }
+
     .main-menu .current_page_item {
         border-bottom: 3px solid var(--accent);
-    }
-
-    .main-menu a::before,
-    .main-menu a::after {
-        position: absolute;
-        left: 0;
-        content: '';
-        display: block;
-        width: 100%;
-        height: 50%;
-        background-color: var(--secondary-2);
-        z-index: -1;
-        transform: scaleX(0);
-        transition: transform .6s;
-    }
-
-    .main-menu a::before {
-        top: 0;
-        transform-origin: left;
-    }
-
-    .main-menu a::after {
-        top: 50%;
-        transform-origin: right;
-    }
-
-    .main-menu a:hover::before {
-        transform: scaleX(1);
-    }
-
-    .main-menu a:hover::after {
-        transform: scaleX(1);
     }
 }

@@ -1,0 +1,1 @@
+<h1>Desde single.php</h1>

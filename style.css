@@ -210,3 +210,44 @@ body.home .header {
         border-bottom: 3px solid var(--accent);
     }
 }
+
+
+/* footer */
+
+.footer-content {
+    padding: 4rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+.footer .main-menu a {
+    color: var(--dark);
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 0 1rem;
+}
+
+.footer .main-menu a::before, 
+.footer .main-menu a::after {
+    display: none;
+}
+
+.copyright {
+    text-align: center;
+    font-family: var(--heads-font);
+    font-size: 1.8rem;
+    margin: 2rem 0 0 0 ;
+}
+
+@media (min-width: 768px) {
+    .copyright {
+        font-size: 2.4rem;
+        margin: 0;
+    }
+}

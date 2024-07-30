@@ -1,5 +1,8 @@
 <?php
 
+//includes 
+require get_template_directory() . '/includes/queries.php';
+
 // image support
 function bookreviews_setup()
 {

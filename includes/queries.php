@@ -12,7 +12,7 @@
 
             $libros = new WP_Query($args);
 
-            while($libros->have_post()) {
+            while($libros->have_posts()) {
                 $libros->the_post();
                 ?>
                     <li class="card">
@@ -34,6 +34,7 @@
             }
             wp_reset_postdata();
             ?>
+            <h1>esto sirve ?</h1>
         </ul>
 
         <?php

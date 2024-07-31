@@ -340,7 +340,7 @@ hr {
 }
 
 /* categories on cards */
-/* .card .post-categories {
+ .card .post-categories {
     position: absolute;
     top: 2rem;
     left: 2rem;
@@ -360,9 +360,7 @@ hr {
     text-transform: uppercase;
     font-weight: 700;
     font: 1.6rem;
-} */
-
-/* cards again */
+} 
 
 .card:hover img {
     transform: scale(1.1);
@@ -400,12 +398,11 @@ hr {
 }
 
 .card .meta span {
-    color: var(--primary);
+    color: var(--secondary-2);
 }
 
 /* info-meta */
 .info-meta {
-    background-color: var(--light-grey);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -422,7 +419,6 @@ hr {
 .info-meta a {
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--dark);
 }
 
 .info-meta span {

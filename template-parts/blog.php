@@ -1,4 +1,4 @@
-<li>
+<li class="card">
     <?php 
         the_category();
     ?>

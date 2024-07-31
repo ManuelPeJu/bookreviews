@@ -24,7 +24,7 @@
                                 the_post_thumbnail(); 
                             }
                             ?>
-                            <div class="content card-info">
+                            <div class="content">
                                 <a href="<?php the_permalink(); ?>">
                                     <h3><?php the_title(); ?></h3>
                                     <p>Autor: <?php _e($libro_autor); ?></p>

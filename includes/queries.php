@@ -15,6 +15,8 @@
                 if ($libros->have_posts()) {
                     while($libros->have_posts()) {
                         $libros->the_post();
+                        $libro_autor = get_field('libro_autor');
+                        $libro_fecha = get_field('libro_fecha');
                         ?>
                         <li class="card">
                             <?php 
@@ -22,10 +24,12 @@
                                 the_post_thumbnail(); 
                             }
                             ?>
-                            <div class="content">
+                            <div class="content card-info">
                                 <a href="<?php the_permalink(); ?>">
                                     <h3><?php the_title(); ?></h3>
-                                    <p><?php the_excerpt(); ?></p> <!-- Usar the_excerpt() en vez de the_content() para resúmenes -->
+                                    <p>Autor: <?php _e($libro_autor); ?></p>
+                                    <p>Fecha Publicación: <?php $libro_fecha ?> </p>
+                                    
                                 </a>
                             </div>
                         </li>

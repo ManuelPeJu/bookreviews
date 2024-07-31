@@ -5,7 +5,7 @@
 <main class="container section">
     <section class="main-content">
         <?php 
-            get_template_part('template-parts/libros.php')
+            get_template_part('template-parts/libros');
         ?>
     </section>
 </main>

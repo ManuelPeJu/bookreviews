@@ -169,11 +169,7 @@ hr {
 
 .button-container {
     display: flex;
-    justify-content: flex-end;
-}
-
-.button {
-
+    justify-content: flex-start;
 }
 
 .primary-button {

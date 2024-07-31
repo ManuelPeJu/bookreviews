@@ -406,6 +406,7 @@ hr {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    background-color: var(--accent-2);
 }
 @media (min-width: 992px) {
      .info-meta {
@@ -419,6 +420,7 @@ hr {
 .info-meta a {
     font-size: 1.6rem;
     font-weight: 700;
+    color: var(--white)
 }
 
 .info-meta span {

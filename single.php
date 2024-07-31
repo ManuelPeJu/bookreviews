@@ -1,1 +1,15 @@
-<h1>Desde single.php</h1>
+<?php 
+    get_header();
+?>
+
+<main class="container section">
+    <section class="main-content">
+        <?php 
+            get_template_part('template-parts/post')
+        ?>
+    </section>
+</main>
+
+<?php 
+    get_footer();
+?>

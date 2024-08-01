@@ -144,6 +144,10 @@ hr {
     padding: 5rem 0 ;
 }
 
+.section p {
+    font-weight: bold;
+}
+
 /* buttons */
 
 .form-submit .submit,

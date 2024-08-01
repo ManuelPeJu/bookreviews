@@ -37,7 +37,7 @@ add_action('wp_enqueue_scripts', 'bookreviews_scripts_style');
 
 
 // dynamic images
-function gymfitness_hero_imagen() {
+function bookreviews_hero_imagen() {
     //All of this is so that the owner, if for whatever reason he wants to change the hero's image, can.
 
     // getting the id from the page
@@ -59,4 +59,4 @@ function gymfitness_hero_imagen() {
     //inject css code
     wp_add_inline_style("custom", $imagen_destacada_css);
 }
-add_action('init', 'gymfitness_hero_imagen');
+add_action('init', 'bookreviews_hero_imagen');

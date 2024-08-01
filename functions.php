@@ -36,22 +36,27 @@ function bookreviews_scripts_style() {
 add_action('wp_enqueue_scripts', 'bookreviews_scripts_style');
 
 
-// dynamic imgs
-function bookreviews_hero_imagen(){
-    $front_id = get_option('page_on_front');
+// dynamic images
+function gymfitness_hero_imagen() {
+    //All of this is so that the owner, if for whatever reason he wants to change the hero's image, can.
 
-    $id_imagen = get_field('hero_imagen', $front_id);
+    // getting the id from the page
+    $front_id = get_option("page_on_front"); // get the info on admin/options.php a hidden panel WP
 
+    // getting the img
+    $id_imagen = get_field("hero_imagen", $front_id); // the second param is a reference of where to look
+    //getting the rute
     $imagen = wp_get_attachment_image_src($id_imagen, "full")[0];
-
-    wp_register_style('custom', false);
-    wp_enqueue_style('custom');
+    //creating css
+    wp_register_style("custom", false);
+    wp_enqueue_style("custom");
 
     $imagen_destacada_css = "
-        body.homer .header {
+        body.home .header {
             background-image: linear-gradient(rgb(0 0 0 / .75), rgb( 0 0 0 / .75)), url($imagen);
         }
     ";
-    wp_add_inline_style('custom', $imagen_destacada_css);
+    //inject css code
+    wp_add_inline_style("custom", $imagen_destacada_css);
 }
-add_action('init', 'bookreviews_hero_imagen');
+add_action('init', 'gymfitness_hero_imagen');

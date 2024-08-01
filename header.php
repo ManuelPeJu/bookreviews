@@ -26,6 +26,25 @@
                     wp_nav_menu($args); // this function render a menu taking a associative array as menu location
                 ?>
             </div>
+
+            <?php 
+                if(is_front_page()) {
+                    ?>
+                        <div class="tagline center-text container">
+                            <h1>
+                                <?php 
+                                    the_field('hero_heading')
+                                ?>
+                            </h1>
+                            <p>
+                                <?php 
+                                    the_field('hero_text')
+                                ?>
+                            </p>
+                        </div>
+                    <?php
+                }
+            ?>
         </nav>
     </header>    
 </body>

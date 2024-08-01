@@ -190,7 +190,7 @@ hr {
 }
 
 /* NAVBAR */
-/* body.home .header {
+body.home .header {
     padding-top: 2rem;
     height: auto;
     min-height: 100rem;
@@ -203,7 +203,7 @@ hr {
         height: 100vh;
         max-height: 100rem;
     }
-} */
+}
 
 .header {
     background-color: var(--primary);

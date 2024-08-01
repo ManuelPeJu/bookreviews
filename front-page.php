@@ -19,7 +19,7 @@
 
     <div class="button-container">
         <a href="<?php echo esc_url(get_permalink(21))?>" class="button primary-button">
-            Ver todas los libros
+            Ver todos los libros
         </a>
     </div>
 </main>
@@ -43,6 +43,11 @@
                 wp_reset_postdata();
             ?>
         </ul>
+        <div class="button-container">
+            <a href="<?php echo esc_url(get_permalink(53))?>" class="button primary-button">
+                Ver todas las reseñas
+            </a>
+        </div>
 
 </section>
 

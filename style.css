@@ -189,6 +189,10 @@ hr {
     color: var(--white);
 }
 
+#hero_button {
+    margin-top: 3rem;
+}
+
 /* NAVBAR */
 body.home .header {
     padding-top: 2rem;
@@ -271,6 +275,21 @@ body.home .header {
     .main-menu .current_page_item {
         border-bottom: 3px solid var(--accent);
     }
+}
+
+.tagline {
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .tagline {
+        margin-top: 15rem;
+    }
+}
+
+.tagline p {
+    font-size: 2rem;
 }
 
 

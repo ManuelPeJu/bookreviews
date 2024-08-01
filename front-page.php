@@ -11,7 +11,7 @@
     </p>
 </section>
 
-<main class="container center-text">
+<main class="container center-text" id="main_id">
     <h2 class="center-text primary-text">Registro de Libros</h2>
         <?php 
             bookreviews_lista_libros(4); 

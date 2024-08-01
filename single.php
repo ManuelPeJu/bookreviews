@@ -9,7 +9,7 @@
         ?>
     </section>
 
-    <div class="comments focus-content center-text">
+    <div class="comments focus-content center-text content-2">
             <?php 
                 comment_form();
                 ?>

@@ -27,6 +27,7 @@
                 ?>
             </div>
 
+        </nav>
             <?php 
                 if(is_front_page()) {
                     ?>
@@ -38,13 +39,13 @@
                             </h1>
                             <p>
                                 <?php 
-                                    the_field('hero_text')
+                                    the_field('hero_texto')
                                 ?>
                             </p>
+                            <button class="primary-button button" id="hero_button">Descubrir</button>
                         </div>
                     <?php
                 }
             ?>
-        </nav>
     </header>    
 </body>

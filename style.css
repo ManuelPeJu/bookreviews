@@ -174,6 +174,7 @@ hr {
 }
 
 
+
 .button-container {
     display: flex;
     justify-content: flex-start;
@@ -511,4 +512,10 @@ h3.comments {
 .comments-list .children .comment {
     background-color: var(--white);
     margin: 2rem 0;
+}
+
+.content-2 {
+    background-color: var(--accent-2);
+    padding: 5rem;
+    width: 100%;
 }

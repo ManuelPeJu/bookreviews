@@ -2,6 +2,7 @@
 
 //includes 
 require get_template_directory() . '/includes/queries.php';
+require get_template_directory() . '/includes/widgets.php';
 
 // image support
 function bookreviews_setup()
@@ -60,3 +61,18 @@ function bookreviews_hero_imagen() {
     wp_add_inline_style("custom", $imagen_destacada_css);
 }
 add_action('init', 'bookreviews_hero_imagen');
+
+
+// BookReviews Widget
+function bookreviews_widgets() {
+    register_sidebar(array(
+        'name'  => 'sidebar 1',
+        'id'    => 'sidebar_1',
+        'before_widget'  => '<div class="widget">',
+        'after_widget'   => '</div>',
+        'before_title'   => '<h3 class"text-center text-primary">',
+        'after_title'    => '</h3>',
+
+    ));
+
+}

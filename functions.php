@@ -66,11 +66,11 @@ add_action('init', 'bookreviews_hero_imagen');
 // BookReviews Widget
 function bookreviews_widgets() {
     register_sidebar(array(
-        'name'           => __('sidebar 1' , 'bookreviews' ),
+        'name'           => __('sidebar 1' , 'bookreviews'),
         'id'             => 'sidebar_1',
-        'before_widget'  => '<div class="widget">',
+        'before_widget'  => '<div class="custom-search-widget">',
         'after_widget'   => '</div>',
-        'before_title'   => '<h3 class"center-text text-primary">',
+        'before_title'   => '<h3>',
         'after_title'    => '</h3>',
 
     ));

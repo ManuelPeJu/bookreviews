@@ -2,7 +2,7 @@
     get_header();
 ?>
 
-<section class="welcome section container center-text">
+<section class="welcome section container center-text" id="main_id">
     <h2 class="primary-text">
         <?php the_field("encabezado_bienvenida");?>
     </h2>
@@ -11,7 +11,7 @@
     </p>
 </section>
 
-<main class="container center-text" id="main_id">
+<main class="container center-text">
     <h2 class="center-text primary-text">Registro de Libros</h2>
         <?php 
             bookreviews_lista_libros(4); 

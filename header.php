@@ -26,8 +26,8 @@
                     wp_nav_menu($args); // this function render a menu taking a associative array as menu location
                 ?>
             </div>
-
         </nav>
+        
             <?php 
                 if(is_front_page()) {
                     ?>

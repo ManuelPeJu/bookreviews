@@ -33,6 +33,9 @@ function bookreviews_scripts_style() {
 
     //JS
     wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true);
+    if(is_page('inicio')) {
+        wp_enqueue_script('hero', get_template_directory_uri() . '/js/heroButton.js', array(), '1.0.0', true);
+    }
 }
 add_action('wp_enqueue_scripts', 'bookreviews_scripts_style');
 
@@ -68,9 +71,9 @@ function bookreviews_widgets() {
     register_sidebar(array(
         'name'           => __('sidebar 1' , 'bookreviews'),
         'id'             => 'sidebar_1',
-        'before_widget'  => '<div class="custom-search-widget">',
+        'before_widget'  => '<div class="con-sidebar">',
         'after_widget'   => '</div>',
-        'before_title'   => '<h3>',
+        'before_title'   => '<h3 class="primary-text">',
         'after_title'    => '</h3>',
 
     ));

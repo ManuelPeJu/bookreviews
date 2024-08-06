@@ -6,11 +6,14 @@ get_header();
     <main id="main" class="container section">
 
     <?php if ( have_posts() ) : ?>
+        <?php 
+            get_sidebar('sidebar-1')    ;
+        ?>
 
         <header class="center-text">
             <h1>
                 <?php
-                printf( __( 'Resultados para: %s', 'bookreviews' ), '<span>' . get_search_query() . '</span>' );
+                printf( __( 'Resultados para: %s', 'bookreviews' ),'<span>' . get_search_query() . '</span>' );
                 ?>
             </h1>
         </header><!-- .page-header -->
@@ -21,7 +24,7 @@ get_header();
             the_post();
 
             // Include the template for the content.
-            get_template_part( 'template-parts/libro', 'search' );
+            get_template_part( 'template-parts/content', 'search' );
 
         endwhile;
 
@@ -39,6 +42,5 @@ get_header();
 </div><!-- .content-area -->
 
 <?php
-get_sidebar();
 get_footer();
 ?>

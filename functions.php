@@ -71,9 +71,9 @@ function bookreviews_widgets() {
     register_sidebar(array(
         'name'           => __('sidebar 1' , 'bookreviews'),
         'id'             => 'sidebar_1',
-        'before_widget'  => '<div class="con-sidebar">',
+        'before_widget'  => '<div class="con-sidebar center-text">',
         'after_widget'   => '</div>',
-        'before_title'   => '<h3 class="primary-text">',
+        'before_title'   => '<h3 class="primary-text center-text">',
         'after_title'    => '</h3>',
 
     ));

@@ -222,6 +222,10 @@ body.home .header {
     font-size: 3rem;
 }
 
+.no-logo:hover {
+    color: var(--secondary-2);
+}
+
 .header {
     background-color: var(--primary);
     padding: 2rem 0;
@@ -609,7 +613,7 @@ h3.comments {
 
 
 /* Custom Search Bar */
-.custom-search-widget input[type="text"] {
+/* .custom-search-widget input[type="text"] {
     width: 50%;
     padding: 5px;
     margin-bottom: 10px;
@@ -626,4 +630,39 @@ h3.comments {
 
 .custom-search-widget button:hover {
     background-color: #005177;
+} */
+
+/* SIDEBAR */
+
+
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .con-sidebar h3 {
+        /* background-color: red; */
+        margin-bottom: 5px;
+    }
+
+    .con-sidebar input[type="text"]{
+        border: 1px solid var(--secondary-2);
+        padding: 0.4rem;
+    }
+
+    .con-sidebar button {
+        width: 10%;
+        padding: 5px;
+        background-color: #0073aa;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.info-class {
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
 }

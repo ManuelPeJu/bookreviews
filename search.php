@@ -1,9 +1,44 @@
-<?php 
-    get_header();
+<?php
+get_header();
 ?>
 
-<h1 class="center-text">hola desde el search.php</h1>
+<div id="primary" class="content-area">
+    <main id="main" class="container section">
 
-<?php 
-    get_footer();
+    <?php if ( have_posts() ) : ?>
+
+        <header class="center-text">
+            <h1>
+                <?php
+                printf( __( 'Resultados para: %s', 'bookreviews' ), '<span>' . get_search_query() . '</span>' );
+                ?>
+            </h1>
+        </header><!-- .page-header -->
+
+        <?php
+        // Start the Loop.
+        while ( have_posts() ) :
+            the_post();
+
+            // Include the template for the content.
+            get_template_part( 'template-parts/libro', 'search' );
+
+        endwhile;
+
+        // Display navigation to next/previous pages when applicable.
+        the_posts_navigation();
+
+    else :
+
+        get_template_part( 'template-parts/content', 'none' );
+
+    endif;
+    ?>
+
+    </main><!-- .site-main -->
+</div><!-- .content-area -->
+
+<?php
+get_sidebar();
+get_footer();
 ?>

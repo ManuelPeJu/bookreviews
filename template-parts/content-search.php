@@ -27,6 +27,11 @@
                     ?>
                 </div>
             </div>
+
+            <div class="button-container">
+                <a href="<?php echo esc_url(get_permalink()) ?>" class="button primary-button">Ver más</a>
+            </div>
+
         </section>
         
     <?php

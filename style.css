@@ -630,6 +630,30 @@ h3.comments {
 
 /* SIDEBAR */
 
+.con-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.con-sidebar h3 {
+    /* background-color: red; */
+    margin-bottom: 5px;
+}
+
+.con-sidebar input[type="text"]{
+    border: 1px solid var(--secondary-2);
+    padding: 0.4rem;
+}
+
+.con-sidebar button {
+    width: 30%;
+    padding: 5px;
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 
 @media (min-width: 768px) {
     .con-sidebar {

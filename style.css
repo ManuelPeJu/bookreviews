@@ -135,10 +135,6 @@ hr {
     text-align: center;
 }
 
-.center-text a {
-    color: var(--primary);
-}
-
 .secondary-text {
     color: var(--secondary);
 

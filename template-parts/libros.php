@@ -20,8 +20,7 @@
 
 <?php
     the_content();
-
-    // the_field('libro_descripcion');
+    
     
 endwhile;
 ?>

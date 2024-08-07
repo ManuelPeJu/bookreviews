@@ -31,10 +31,6 @@ get_header();
         // Display navigation to next/previous pages when applicable.
         the_posts_navigation();
 
-    else :
-
-        get_template_part( 'template-parts/content', 'none' );
-
     endif;
     ?>
 

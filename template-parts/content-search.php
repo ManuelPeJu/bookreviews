@@ -3,44 +3,30 @@
     // Check if the post type is 'post' or 'bookreviews_books'.
     if ( 'post' === get_post_type() || 'bookreviews_books' === get_post_type() ) :
     ?>
-        <section class="container section search-card">
-            <header class="entry-header">
-                    <?php
-                    // Display the post title with a link to the full post.
-                    if ( is_singular() ) :
-                        the_title( '<h1 class="entry-title">', '</h1>' );
-                    else :
-                        the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-                    endif;
-                    ?>
-            </header><!-- .entry-header -->
-
-            <div class="entry-thubnail">
-                <?php 
-                    the_post_thumbnail("full", array("class" => "featured-image"));
-                ?>
-            </div>
-
-            <div class="entry-summary">
-                <?php
-                // Display the post excerpt.
-                the_excerpt();
-                ?>
-            </div><!-- .entry-summary -->
-
-            <footer class="entry-footer">
-                <?php
-                // Display post meta information such as category and tags for 'post'.
-                if ( 'post' === get_post_type() ) :
-                    ?>
-                    <div class="entry-meta">
+        <section class="container section">
+            <div class="grid-search">
+                <div class="text-content">
                         <?php
-                        echo get_the_date();
+                        // Display the post title with a link to the full post.
+                        if ( is_singular() ) :
+                            the_title( '<h1 class="primary-text">', '</h1>' );
+                        else :
+                            the_title( '<h2 class="primary-text"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+                        endif;
                         ?>
-                    </div><!-- .entry-meta -->
-                <?php endif; ?>
-            </footer><!-- .entry-footer -->
 
+                        <?php
+                        // Display the post excerpt.
+                        the_excerpt();
+                        ?>
+                </div><!-- .entry-header -->
+
+                <div class="image-content">
+                    <?php 
+                        the_post_thumbnail("full", array("class" => "featured-image"));
+                    ?>
+                </div>
+            </div>
         </section>
         
     <?php

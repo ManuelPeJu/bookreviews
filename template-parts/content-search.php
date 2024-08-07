@@ -3,7 +3,7 @@
     // Check if the post type is 'post' or 'bookreviews_books'.
     if ( 'post' === get_post_type() || 'bookreviews_books' === get_post_type() ) :
     ?>
-        <section class="container section">
+        <section class="container section search-card">
             <header class="entry-header">
                     <?php
                     // Display the post title with a link to the full post.
@@ -14,6 +14,12 @@
                     endif;
                     ?>
             </header><!-- .entry-header -->
+
+            <div class="entry-thubnail">
+                <?php 
+                    the_post_thumbnail("full", array("class" => "featured-image"));
+                ?>
+            </div>
 
             <div class="entry-summary">
                 <?php

@@ -12,7 +12,7 @@
 
                 $libros = new WP_Query($args);
 
-                if ($libros->have_posts()) {
+                
                     while($libros->have_posts()) {
                         $libros->the_post();
                         $libro_autor = get_field('libro_autor');
@@ -36,11 +36,6 @@
                         <?php
                     }
                     wp_reset_postdata();
-                } else {
-                    ?>
-                    <li><?php _e('No books found', 'text-domain'); ?></li>
-                    <?php
-                }
                 ?>
             </ul>
 

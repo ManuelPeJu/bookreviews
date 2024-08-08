@@ -15,12 +15,9 @@
     /** Fuentes **/
     --main-font: 'Raleway', sans-serif;
     --heads-font: "Staatliches", sans-serif;
-    /** Colores **/
-    /* --primary: #ff5b00;
-    --dark-grey: #2f2e2e;
-    --light-grey: #EBEBEB;
-    --dark: #000; */
 
+
+    /** Colores **/
     --primary: #2C3E50;
     --primary-2: #ECF0F1;
     --secondary: #C0392B;
@@ -117,7 +114,11 @@ hr {
 
 .featured-image {
     margin-bottom: 3rem;
-    width: 100%;
+    max-width: 800px;
+    max-height: 800px;
+    position: relative;
+    top: 20%;
+    left: 20%;
 }
 
 .no-image {
@@ -369,19 +370,21 @@ body.home .header {
 /* footer */
 
 .footer-content {
+    background-color: var(--primary);
     padding: 4rem 0;
 }
 
 @media screen and (min-width: 768px) {
     .footer-content {
+        background-color: var(--primary);
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     
 }
 
 .footer .main-menu a {
-    color: var(--dark);
+    color: var(--accent);
     text-align: center;
     font-size: 2.4rem;
     padding: 0 1rem;
@@ -395,6 +398,7 @@ body.home .header {
 .copyright {
     text-align: center;
     font-family: var(--heads-font);
+    color: var(--white);
     font-size: 1.8rem;
     margin: 2rem 0 0 0 ;
 }

@@ -80,3 +80,17 @@ function bookreviews_widgets() {
 
 }
 add_action('widgets_init', 'bookreviews_widgets');
+
+
+// Allow automatic comments on singular CPT
+
+function bookreviews_comments_default($post_id, $post, $update) {
+    if ($post->post_type == 'mi_post' && !$update) {
+        // Habilita los comentarios
+        if (!get_post_meta($post_id, '_wp_trash_meta_status', true)) {
+            update_post_meta($post_id, '_comments_open', 1);
+        }
+    }
+}
+
+add_action('wp_insert_post', 'bookreviews_comments_default', 10, 3);

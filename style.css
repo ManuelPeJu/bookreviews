@@ -114,11 +114,11 @@ hr {
 
 .featured-image {
     margin-bottom: 3rem;
-    max-width: 800px;
-    max-height: 800px;
-    position: relative;
-    top: 20%;
-    left: 20%;
+    width: 100%;
+}
+
+.search-image {
+    width: 100%;
 }
 
 .no-image {

@@ -9,9 +9,9 @@
                         <?php
                         // Display the post title with a link to the full post.
                         if ( is_singular() ) :
-                            the_title( '<h1 class="primary-text">', '</h1>' );
+                            the_title( '<h1 class="primary-text center text">', '</h1>' );
                         else :
-                            the_title( '<h2 class="primary-text"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+                            the_title( '<h2 class="primary-text center text"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
                         endif;
                         ?>
 
@@ -23,7 +23,7 @@
 
                 <div class="image-content">
                     <?php 
-                        the_post_thumbnail("full", array("class" => "featured-image"));
+                        the_post_thumbnail("full", array("class" => "search-image"));
                     ?>
                 </div>
             </div>

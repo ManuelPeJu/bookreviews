@@ -12,7 +12,7 @@
     ?>
        
     <?php 
-        get_template_part('template-part/pagina');
+        get_template_part("template-parts/pagina");
     ?>
 
     <?php 

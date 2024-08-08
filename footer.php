@@ -1,6 +1,4 @@
-<footer class="footer container">
-    <hr>
-
+<footer class="footer">
     <div class="footer-content">
         <?php
 

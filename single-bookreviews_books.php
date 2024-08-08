@@ -2,7 +2,7 @@
     get_header();
 ?>
 
-<main class="container section">
+<main class="container section center-text">
     <section class="main-content">
         <?php 
             get_template_part('template-parts/libros');

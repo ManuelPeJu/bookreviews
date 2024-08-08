@@ -25,6 +25,7 @@
     --accent: #27AE60;
     --accent-2: #95A5A6;
     --white:#FFF;
+    --dark: #000;
 
 }
 
@@ -39,7 +40,6 @@ html {
 }
 
 body {
-    height: 100vh;
     font-family: var(--main-font);
     font-size: 18px;
     font-size: 1.8rem;
@@ -373,13 +373,11 @@ body.home .header {
 /* footer */
 
 .footer-content {
-    background-color: var(--primary);
     padding: 4rem 0;
 }
 
 @media screen and (min-width: 768px) {
     .footer-content {
-        background-color: var(--primary);
         display: flex;
         justify-content: space-evenly;
     }
@@ -387,7 +385,7 @@ body.home .header {
 }
 
 .footer .main-menu a {
-    color: var(--accent);
+    color: var(--dark);
     text-align: center;
     font-size: 2.4rem;
     padding: 0 1rem;
@@ -401,7 +399,6 @@ body.home .header {
 .copyright {
     text-align: center;
     font-family: var(--heads-font);
-    color: var(--white);
     font-size: 1.8rem;
     margin: 2rem 0 0 0 ;
 }
